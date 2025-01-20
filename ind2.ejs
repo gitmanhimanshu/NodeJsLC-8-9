@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Text</title>
+</head>
+<body>
+  <% if(files.length > 0) { %>
+    <% files.forEach(val => { %> <!-- Corrected this line -->
+        <h2><%= val %></h2>
+        <a href="/data/<%= val %>">see more</a>
+        <a href="/edit/<%= val %>">edit file</a>
+    <% }); %> <!-- Added closing of the loop properly -->
+<% } else { %>
+    <h1>No files</h1>
+<% } %>
+
+    
+    
+</body>
+</html>

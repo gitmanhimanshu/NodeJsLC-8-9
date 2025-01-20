@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/edited" method="post">
+    <!-- Text Input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="oldname"  value="<%=filename%>"><br><br>
+
+    <!-- Textarea Input -->
+    <label for="message">New Name:</label>
+    <input type="text" id="name" name="newname" required><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
